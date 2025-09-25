@@ -11,6 +11,7 @@ public class User {
     private String username;
     @Setter
     @Getter
+    // Cases of the user, Unique Case ID as Key, Case Name as Value
     private HashMap<String, String> user_Cases;
 
     public User(String username) {
