@@ -1,16 +1,18 @@
 package com.jannikscode.orgabums;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.HashMap;
 
+@Getter
+@Setter
+@Builder
 public class User {
-    @Setter
-    @Getter
-    private String username;
-    @Setter
-    @Getter
+
+    final private String username;
+
     // Cases of the user, Unique Case ID as Key, Case Name as Value
     private HashMap<String, String> user_Cases;
 
