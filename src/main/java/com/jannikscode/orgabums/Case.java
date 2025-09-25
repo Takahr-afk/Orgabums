@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import java.text.DateFormat;
 import java.util.HashMap;
+import java.util.List;
 
 @Builder
 @Getter
@@ -23,6 +24,5 @@ public class Case {
     private HashMap<String, String> contact_info;
     // Key UserID, Value Name
     final private HashMap<String, String> professionals;
-    // Key Date, Value Meeting
-    private HashMap<DateFormat, Meeting> meetings;
+    private List<Meeting> meetings;
 }
